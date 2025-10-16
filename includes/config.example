@@ -1,0 +1,63 @@
+<?php
+ini_set("log_errors", 1);
+ini_set("error_log", "/var/scripts/log/log.htn");
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+
+set_time_limit(0);
+
+//mysql config
+define("DB", [
+	"HOST_DEFAULT" => 'ip_default',
+	"HOST" => "127.0.0.1",
+	"PORT" => 3306,
+	"USER" => 'root',
+	"PASS" => 'pwd',
+	"DBNAME" => 'dbname'
+]);
+//mongo config
+define("MONGODB", [
+	"HOST_DEFAULT" => 'ip_default',
+	"HOST" => "127.0.0.1",
+	"PORT" => 27017,
+	"USER" => 'root',
+	"PASS" => 'pwd',
+	"DBNAME" => 'dbname'
+]);
+
+//redis config
+define('REDIS_MASTER', [
+	"HOST" => '10.148.108.16',
+	"PORT" => 6799,
+	"PASS" => 'pwd'
+]);
+
+define("REDIS_SLAVE", [
+	"HOST" => "127.0.0.1",
+	"PORT" => 6799,
+	"PASS" => 'pwd'
+]);
+
+define("REDIS", [
+	"HOST" => "127.0.0.1",
+	"PORT" => 6799,
+	"PASS" => 'pwd'
+]);
+//memcache config
+define("MEMCACHE", [
+	"HOST" => "127.0.0.1",
+	"PORT" => 11211
+]);
+//AST config
+define("ASTMAN", [
+	"HOST" => "127.0.0.1",
+	"PORT" => 5038,
+	"USER" => 'root',
+	"SECRET" => 'pwd',
+]);
+//queue config
+define('QUEUE_SERVER_CLUSTER_A', 'ip_cluster_a');
+define('QUEUE_SERVER', '127.0.0.1');
+define('TIMEOUT_EXPIRED_JOB', 30); //set thời gian timeout để trả lại job vào queue
+define('TIMEOUT_EXPIRED_QUEUE', 3600); //set thời gian timeout để giải phóng job ra khỏi queue
+//other
+define('FILE_PATH_OUTBOUND', '/var/spool/asterisk/monitor/');
