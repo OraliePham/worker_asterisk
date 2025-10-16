@@ -1,0 +1,10 @@
+{
+    "name": "Worldfone/BeanstalkMq",
+    "description": "package under development",
+    "autoload": {
+        "psr-4": {
+            "Worldfone\\BeanstalkMq\\": "src/"
+        }
+    }
+}
+

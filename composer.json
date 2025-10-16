@@ -1,0 +1,19 @@
+{
+    "name": "admin/asterisk-pipeline",
+    "description": "asterisk",
+    "autoload": {
+        "psr-4": {
+            "Admin\\AsteriskPipeline\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "phamton"
+        }
+    ],
+    "require": {
+        "pda/pheanstalk": "^4.0",
+        "monolog/monolog": "^2.10",
+        "guzzlehttp/guzzle": "^7.10"
+    }
+}
